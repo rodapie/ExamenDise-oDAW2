@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Completa tu nombre -->
+    <title>NOMBRE_DEL_ALUMNO</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- Completar html aqui -->
+    <div id="ok">
+    <form id ="form">
+            <table class="tabla">
+                <thead>
+                <caption>Aplicación de dietas</caption>
+                   
+                <tr>
+                    <th>Nombre</th>
+                    <th>Sexo</th>
+                    <th>Edad</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Actividad</th>
+                    <th>IM Basal</th>
+                    <th>Calorias necesarios</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Francisco Romero</td>
+                    <td> <p class="Hombre">Hombre</p></td>
+                    <td>31</td>
+                    <td>198</td>
+                    <td>89</td>
+                    <td><p class="actividad">Moderada</p</td>
+                    <td>1427 kCal</td>
+                    <td>1712 kCal</td>
+                </tr>
+                <tr>
+                    <td>Jose Antonio Lara</td>
+                    <td><p class="Hombre">Hombre</p></td>
+                    <td>46</td>
+                    <td>187</td>
+                    <td>85</td>
+                    <td><p class="actividad">Moderada</p</td>
+                    <td>1333 kCal</td>
+                    <td>1256 kCal</td>
+                </tr>
+                <tr>
+                    <td>Jennifer Lopez</td>
+                    <td><p class="Mujer">Mujer</p></td>
+                    <td>46</td>
+                    <td>187</td>
+                    <td>85</td>
+                    <td><p class="actividad">Alta</p</td>
+                    <td>1333 kCal</td>
+                    <td>1435 kCal</td>
+                </tr>
+                <tr>
+                    <td>Jennifer Lopez 2</td>
+                    <td><p class="Mujer">Mujer</p></td>
+                    <td>46</td>
+                    <td>187</td>
+                    <td>85</td>
+                    <td><p class="actividad">Moderada</p></td>
+                    <td>1333 kCal</td>
+                    <td>1435 kCal</td>
+                </tr>
+                <tr>
+                    <td>Jose Antonio Lara 2</td>
+                    <td ><p class="Hombre">Hombre</p></td>
+                    <td>46</td>
+                    <td>187</td>
+                    <td>85</td>
+                    <td><p class="actividad">Moderada</p</td>
+                    <td>1333 kCal</td>
+                    <td>1256 kCal</td>
+                </tr>
+                </tbody>
+            
+            </table>
+        <input type="boton" class="boton" id="boton" onclick="modal()" value ="Añadir Cliente"> 
+    
+        <div id ="divFooter">
+            <footer> <b>Miguel Sanchez© 2022</b></footer>
+        </div>
+        
+    </form>
+</div>
+    <div id="myModal" class="modal">
+        
+            <div class="modal-content">
+                <!-- <table class="tabla"> -->
+                    <h1>Nuevo Cliente</h1>
+                    <form  class="formmodal" method="GET" id="formulario" action="index.html"> 
+                        <div class ="center">
+                            <br>
+                            <span>Nombre:</span><input type="text"  id ="nombreForm" required> 
+                        </div>
+                        <br>
+                        <div class ="center">
+                            <span>Sexo:</span>
+                            <input type="radio" value="Mujer" name="Sexo"> Hombre
+                            <input type="radio" value="Hombre" name="Sexo" checked> Mujer
+                        </div>
+                        <br>
+                        <div class ="center">
+                            <span>Edad:</span><input type="number" required min="15" max="99" value ="20">
+                        </div>
+                        <br>
+                        <div class ="center">
+                            <span>Altura(cm):</span><input type="number" required min="130" max="240" value ="165">
+                        </div>
+                        <br>
+                        <div class ="center">
+                            <span>Peso(cm):</span><input type="number" required min="45" max="145" value ="65">
+                        </div>
+                        <br>
+                        <div class ="center">
+                            <span>Actividad física</span><select required>
+                                <option>Suave o sedentaria</option>
+                                <option>Media</option>
+                                <option>Alta</option>
+                            </select>
+                        </div>
+                        <br>
+                        <footer class="footermodal">
+                            <button id="validar" onsubmit="alerta()">Añadir nuevo</button>
+                            <a href="index.html"><input type="button" id="cerrar"value="Volver atrás"> </a>
+                        </footer>
+                            
+                    </form>
+                <!-- </table> -->
+            </div>
+      </div>
+
+    <script src="static/app.js"></script>
+
+</body>
+</html>
